@@ -12,5 +12,6 @@ public class MainExtended {
         System.out.println(myGrade);
         System.out.println(myClass);
         System.out.println(myColour);
+
     }
 }
