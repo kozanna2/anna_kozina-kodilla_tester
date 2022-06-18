@@ -9,8 +9,6 @@ public class Application {
         this.age = age;
         this.height = height;
 
-        Application user = new Application("Adam", 40.5, 178);
-        user.ifOlderAndTaller();
     }
 
     public double getAge() {
@@ -33,4 +31,3 @@ public class Application {
         }
     }
 }
-
