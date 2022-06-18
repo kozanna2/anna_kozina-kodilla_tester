@@ -1,10 +1,10 @@
-public class Application {
+public class UserDetails {
 
     private String name;
     private double age;
     private double height;
 
-    public Application(String name, double age, double height) {
+    public UserDetails(String name, double age, double height) {
         this.name = name;
         this.age = age;
         this.height = height;
