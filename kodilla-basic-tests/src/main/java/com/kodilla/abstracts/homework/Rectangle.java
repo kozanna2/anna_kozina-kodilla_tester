@@ -1,19 +1,22 @@
 package com.kodilla.abstracts.homework;
 
-public class Rectangle1 extends Shape{
-    public Rectangle1(int bok1, int bok2) {
-        super(bok1, bok2);
-    }
-
-    @Override
-    public void calculateArea(int bok1, int bok2) {
-        int squareArea = bok1 * bok2;
-        System.out.println("The area of the square " + bok1 + " x " + bok2 + " is " + squareArea);
-
-    }
-
-    @Override
-    public void calculateCircuit(int bok1, int bok2) {
-
-    }
+public class Rectangle extends Shape{
+    public Rectangle(int side1, int side2) {
+    super(side1, side2);
 }
+
+    @Override
+    public void calculateArea() {
+        int rectangleArea;
+       rectangleArea = getSide1()*getSide2();
+        System.out.println("Square area is " + rectangleArea);
+
+    }
+
+    @Override
+    public void calculateCircuit() {
+        int rectangleCircuit;
+        rectangleCircuit = getSide1()*2 + getSide2()*2;
+        System.out.println("Square circuit is " + rectangleCircuit);
+
+    }}
