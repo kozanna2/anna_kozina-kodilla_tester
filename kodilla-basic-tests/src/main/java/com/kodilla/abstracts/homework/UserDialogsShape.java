@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class UserDialogsShape {
     public static int getShape() {
         while (true) {
-            System.out.println("Which shape do you choose? 1 - SQUARE; 2 - RECTANGLE; 3 - RIGHT TRIANGLE");
+            System.out.println("Which shape do you choose? 1 - SQUARE; 2 - RECTANGLE; 3 - RIGHT TRIANGLE; 4 - CIRCLE");
             int choose = getInt();
-            if (choose >= 1 && choose <= 3) {
+            if (choose >= 1 && choose <= 4) {
                 switch (choose) {
                     case 1:
                         System.out.println("Your chosen figure is SQUARE");
@@ -18,6 +18,8 @@ public class UserDialogsShape {
                     case 3:
                         System.out.println("Your chosen figure is ISOSCALES RIGHT TRIANGLE");
                         break;
+                    case 4:
+                        System.out.println("Your chosen figure is CIRCLE");
                 }
                 return choose;
             }

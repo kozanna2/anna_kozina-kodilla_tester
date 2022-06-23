@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class UserDialogParameter {
     private int side1;
     private int side2;
+    private int radius;
+
 
     public static int getValue1() {
         System.out.println("Enter number for first side:");
@@ -29,6 +31,17 @@ public class UserDialogParameter {
         }
         return side2;
     }
+    public static int getValueRadius() {
+        System.out.println("Enter number for radius");
+        int radius = getInt();
+        if (radius > 0) {
+            System.out.println("Radius is: " + radius);
+
+        } else {
+            System.out.println("The radius value must be positive");
+        }
+        return radius;
+    }
 
     public int getSide1() {
         return side1;
@@ -36,6 +49,10 @@ public class UserDialogParameter {
 
     public int getSide2() {
         return side2;
+    }
+
+    public int getRadius() {
+        return radius;
     }
 
     public static int getInt() {
