@@ -1,23 +1,23 @@
-import java.sql.SQLOutput;
-
 public class Book {
-    private String author;
-    private String title;
+   String author;
+   String title;
 
-    public void setAuthor(String author) {
+    public Book(String author, String title) {
         this.author = author;
-    }
-
-    public void setTitle(String title) {
         this.title = title;
     }
 
-    static void of(String author, String title) {
-        Book of = new Book();
+    public static Book of(String author, String title) {
+        return new Book(author, title);
     }
 
     public static void main(String[] args) {
-        Book book = new Book();
-        book.of("JKR", "HP");
+    Book a = Book.of("Jko", "Hp");
     }
 }
+
+
+
+
+
+
