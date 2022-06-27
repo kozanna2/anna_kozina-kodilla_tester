@@ -2,25 +2,29 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Fiat implements Car {
     private int speed;
+    private int increaseSpeed;
 
     public Fiat(int speed) {
         this.speed = speed;
     }
 
+    public Fiat(int speed, int increaseSpeed) {
+        this.speed = speed;
+        this.increaseSpeed = increaseSpeed;
+    }
+
     @Override
     public int getSpeed() {
-        return 0;
+        return speed;
     }
 
     @Override
-    public void increaseSpeed() {
-        speed+=25;
-        System.out.println("Increasing speed... Currently speed is: " + speed);
+    public int increaseSpeed() {
+        return increaseSpeed;
     }
 
     @Override
-    public void decreaseSpeed() {
-        speed -=15;
-        System.out.println("Decreasing speed... Currently speed is: " + speed);
+    public int decreaseSpeed() {
+       return speed -=15;
     }
 }
