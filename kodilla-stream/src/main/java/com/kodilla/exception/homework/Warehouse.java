@@ -24,8 +24,11 @@ public class Warehouse {
         return order;
    }
     public String isOrderInUse (String number) throws OrderDoesntExistException {
-        if (getOrder(number).equals(number))
-            return getOrder(number).toString();
+        Order order = getOrder(number);
+        String orderNumber = order.getNumber();
+        if (orderNumber.equals(number)){
+            return orderNumber;
+        }
         throw new OrderDoesntExistException();
     }
    public Set<Order> getOrders(){
