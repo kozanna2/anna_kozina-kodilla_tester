@@ -29,12 +29,17 @@ public class Calculator {
     }
 
     public double divide(double a, double b) {
-        try {
-            double value = a / b;
-            display.display(value);
-            return value;
-        } catch (ArithmeticException e) {
-            System.err.println("You can't divide by 0");
-        } return 0;
+        if (b == 0) {
+            throw new ArithmeticException();
+        } else {
+            try {
+                double value = a / b;
+                display.display(value);
+                return value;
+            } catch (ArithmeticException e) {
+                System.err.println("You can't divide by 0");
+            }
+            return 0;
+        }
     }
 }
